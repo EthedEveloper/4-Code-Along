@@ -1,0 +1,42 @@
+/*CSS Written by Ethan Carr*/
+/*Global Styles Mobile First*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #c8d8f2;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+ul li a {
+  text-decoration: none;
+  color: #83a0e1;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  justify-content: space-between;
+}
